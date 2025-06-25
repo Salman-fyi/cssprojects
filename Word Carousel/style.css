@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+h1::after{
+    content:"";
+    animation:7s swap infinite;
+    background-color: slategray;
+    border-radius: 7px;
+    padding: 4px;
+    color: white;
+}
+
+@keyframes swap {
+    0%{
+        content: "loving";
+    }
+    20%{
+        content: "gaming";
+    }
+    40%{
+        content: "playing";
+    }
+    60%{
+        content: "movies";
+    }
+    80%{
+        content: "music";
+    }
+    100%{
+        content: "loving";
+    }
+}
